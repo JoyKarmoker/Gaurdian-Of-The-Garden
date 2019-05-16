@@ -388,6 +388,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeToWait: 4
+  currentSceneIndex: 0
 --- !u!4 &451864073
 Transform:
   m_ObjectHideFlags: 0
@@ -723,6 +724,12 @@ MonoBehaviour:
   levelMusicChangeArray:
   - {fileID: 0}
   - {fileID: 8300000, guid: 55bd8e0b6d037ff4b972d455bae9bf92, type: 3}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 8300000, guid: 37821eee387c2134bbf3165fef3c4ae9, type: 3}
+  - {fileID: 0}
 --- !u!4 &1207101614
 Transform:
   m_ObjectHideFlags: 0

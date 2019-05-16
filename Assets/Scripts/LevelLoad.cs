@@ -34,13 +34,19 @@ public class LevelLoad : MonoBehaviour
         
     }
 
-    void start()
+   public  void Startbutton()
     {
         SceneManager.LoadScene(3);
     }
 
-     void quitButton()
+    public void QuitButton()
     {
         Application.Quit();
     }
+
+    public void OptionButton()
+    {
+        SceneManager.LoadScene(2);
+    }
+
 }
