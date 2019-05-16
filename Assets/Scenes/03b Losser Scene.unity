@@ -730,10 +730,10 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 12800000, guid: c070312f677bb494cbc61dbdffde8836, type: 3}
-    m_FontSize: 278
+    m_FontSize: 118
     m_FontStyle: 3
-    m_BestFit: 1
-    m_MinSize: 10
+    m_BestFit: 0
+    m_MinSize: 1
     m_MaxSize: 278
     m_Alignment: 3
     m_AlignByGeometry: 0
