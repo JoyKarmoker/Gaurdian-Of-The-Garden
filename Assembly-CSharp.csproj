@@ -65,6 +65,7 @@
     <Compile Include="Assets\Scripts\LevelLoad.cs" />
     <Compile Include="Assets\Scripts\LevelLoaderForOptionScene.cs" />
     <Compile Include="Assets\Scripts\MusicManager.cs" />
+    <Compile Include="Assets\Scripts\PlayerPrefsManager.cs" />
     <Compile Include="Assets\Scripts\WinnerScene.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>F:/Joy18_Game_project/Glitch Garden/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
