@@ -387,7 +387,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d3d981c6c866d942998ec36da17f135, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeToWait: 4
+  timeToWait: 3
   currentSceneIndex: 0
 --- !u!4 &451864073
 Transform:
@@ -591,7 +591,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 88a51e06144466049bca7ccdbc08d482, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 98626dc3695d8b949aa74b43d4b08f5d, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.5
   m_Pitch: 1
@@ -724,7 +724,7 @@ MonoBehaviour:
   levelMusicChangeArray:
   - {fileID: 0}
   - {fileID: 8300000, guid: 55bd8e0b6d037ff4b972d455bae9bf92, type: 3}
-  - {fileID: 8300000, guid: 99132b01d3f4f4044b9c222ab70960ab, type: 3}
+  - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}

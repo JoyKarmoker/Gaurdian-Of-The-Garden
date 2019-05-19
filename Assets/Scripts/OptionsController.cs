@@ -6,10 +6,9 @@ using UnityEngine.SceneManagement;
 
 public class OptionsController : MonoBehaviour
 {
-    public Slider volumeSlider;
+    public Slider volumeSlider, difficultySlider;
     public LevelLoaderForOptionScene levelLoader;
     private MusicManager musicManager;
-    public 
 
     // Start is called before the first frame update
     void Start()
@@ -17,6 +16,7 @@ public class OptionsController : MonoBehaviour
         musicManager = GameObject.FindObjectOfType<MusicManager>();
         // Debug.Log(musicManager);
         volumeSlider.value = PlayerPrefsManager.GetMasterVolume();
+        difficultySlider.value = PlayerPrefsManager.GetDifficulty();
     }
 
     // Update is called once per frame
@@ -28,8 +28,15 @@ public class OptionsController : MonoBehaviour
     public void SaveAndExit()
     {
         PlayerPrefsManager.SetMasterVolume(volumeSlider.value);
-        //public AudioClip = musicManager.levelMusicChangeArray[0];
+        
+        PlayerPrefsManager.SetDifficulty(difficultySlider.value);
 
         levelLoader.BackButton();
+    }
+
+    public void SetDefaults()
+    {
+        volumeSlider.value = 0.8f;
+        difficultySlider.value = 2f;
     }
 }

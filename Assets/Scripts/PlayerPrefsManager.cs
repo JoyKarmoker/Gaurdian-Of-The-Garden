@@ -25,7 +25,7 @@ public class PlayerPrefsManager : MonoBehaviour
         return PlayerPrefs.GetFloat(MASTER_VOLUME_KEY);
     }
 
-    public static void UnlockLevel(int level)
+    /*public static void UnlockLevel(int level)
     {
         if(level <= Application.levelCount - 1)
         {
@@ -35,9 +35,9 @@ public class PlayerPrefsManager : MonoBehaviour
         {
             Debug.LogError("Trying to unlock level outside build settings");
         }
-    }
+    }*/
 
-    public static bool IsLevelUnlocked(int level)
+   /* public static bool IsLevelUnlocked(int level)
     {
         int levelvalue = PlayerPrefs.GetInt(LEVEL_KEY + level.ToString());
         bool IsLevelUnlocked = (levelvalue == 1);
@@ -51,11 +51,11 @@ public class PlayerPrefsManager : MonoBehaviour
             Debug.LogError("Trying to unlock level outside build settings");
             return false;
         }
-    }
+    }*/
 
         public static void  SetDifficulty(float difficulty)
         {
-            if(difficulty >=0f && difficulty <=1f)
+            if(difficulty >=1f && difficulty <=3f)
             {
                 PlayerPrefs.SetFloat(DIFFICULTY_KEY, difficulty);
             }
