@@ -12,7 +12,9 @@ public class PlayerPrefsManager : MonoBehaviour
     {
         if(volume >=0f && volume <=1f)
         {
+            
             PlayerPrefs.SetFloat(MASTER_VOLUME_KEY, volume);
+           // Debug.Log("Set Master Volume " + PlayerPrefs.GetFloat(MASTER_VOLUME_KEY));
         }
         else
         {
@@ -22,6 +24,7 @@ public class PlayerPrefsManager : MonoBehaviour
 
     public static float GetMasterVolume()
     {
+        Debug.Log("Volume in get master volume " + PlayerPrefs.GetFloat(MASTER_VOLUME_KEY));
         return PlayerPrefs.GetFloat(MASTER_VOLUME_KEY);
     }
 

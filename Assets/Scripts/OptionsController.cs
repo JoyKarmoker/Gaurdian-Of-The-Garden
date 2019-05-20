@@ -9,10 +9,12 @@ public class OptionsController : MonoBehaviour
     public Slider volumeSlider, difficultySlider;
     public LevelLoaderForOptionScene levelLoader;
     private MusicManager musicManager;
+   //private AudioSource audioSource;
 
     // Start is called before the first frame update
     void Start()
     {
+        //audioSource = GetComponent<AudioSource>();
         musicManager = GameObject.FindObjectOfType<MusicManager>();
         // Debug.Log(musicManager);
         volumeSlider.value = PlayerPrefsManager.GetMasterVolume();
@@ -39,4 +41,5 @@ public class OptionsController : MonoBehaviour
         volumeSlider.value = 0.5f;
         difficultySlider.value = 2f;
     }
+
 }
