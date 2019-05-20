@@ -8,8 +8,6 @@ public class MusicManager : MonoBehaviour
     public AudioClip[] levelMusicChangeArray;
     private AudioSource audioSource;
     bool fuck = false;
-    float volume;
-    private OptionsController optionsController;
     
  
     // Start is called before the first frame update
@@ -17,14 +15,14 @@ public class MusicManager : MonoBehaviour
     {
  
         DontDestroyOnLoad(gameObject);
-      
+        //Debug.Log("Dont Destroy on load: " + name);
     }
 
     private void Start()
     {
         audioSource = GetComponent<AudioSource>();
 
-     }
+    }
 
     // Update is called once per frame
     void Update()
@@ -35,30 +33,28 @@ public class MusicManager : MonoBehaviour
     public void ChangeVolume(float volume)
     {
         audioSource.volume = volume;
-        // PlayerPrefsManager.SetMasterVolume(volume);
-    }
-
-    public void SetVolume(float volume)
-    {
-        audioSource.volume = volume;
-        
     }
 
     private void OnLevelWasLoaded(int level)
     {
+
         if (level == 2)
         {
-            DontDestroyOnLoad(audioSource);
 
+            Debug.Log("Hello");
+            DontDestroyOnLoad(audioSource);
             fuck = true;
         }
 
         else if (level == 1 && fuck == true)
         {
+            Debug.Log("Hi");
             DontDestroyOnLoad(audioSource);
 
-
         }
+
+
+        //Debug.Log("Playing : " + thisLevelMuisc);
 
         else
         {
@@ -66,10 +62,14 @@ public class MusicManager : MonoBehaviour
             audioSource.clip = thisLevelMuisc;
             audioSource.loop = true;
             audioSource.Play();
-
         }
+        
+ 
+    }
 
-
+    public void SetVolume(float volume)
+    {
+        PlayerPrefsManager.SetMasterVolume(volume);
     }
 
 }

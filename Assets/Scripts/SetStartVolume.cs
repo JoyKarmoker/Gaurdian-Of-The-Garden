@@ -14,8 +14,8 @@ public class SetStartVolume : MonoBehaviour
         if(musicManger)
         {
             Debug.Log("Found " + musicManger);
-            volume = PlayerPrefsManager.GetMasterVolume();
-            musicManger.SetVolume(volume);
+           // volume = PlayerPrefsManager.GetMasterVolume();
+            //musicManger.SetVolume(volume);
             
         }
         else
