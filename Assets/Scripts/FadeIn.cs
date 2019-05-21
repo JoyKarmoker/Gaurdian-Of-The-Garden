@@ -2,16 +2,24 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class FadeIn : MonoBehaviour
 {
-    public float fadeInTime;
+     float fadeInTime = 2f;
     public Color currentcolor = Color.black;
     public Image fadePanel;
     // Start is called before the first frame update
-    void Start()
+
+    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
         fadePanel = GetComponent<Image>();
+        gameObject.SetActive(true);
+    }
+    void Start()
+    {
+        
+        
     }
 
     // Update is called once per frame

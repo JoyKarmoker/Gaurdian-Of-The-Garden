@@ -334,12 +334,6 @@
     <Reference Include="UnityEditor.Purchasing">
       <HintPath>F:/Joy18_Game_project/Glitch Garden/Library/PackageCache/com.unity.purchasing@2.0.3/Editor/UnityEditor.Purchasing.dll</HintPath>
     </Reference>
-    <Reference Include="WP8PopUps">
-      <HintPath>F:/Joy18_Game_project/Glitch Garden/Assets/Plugins/WP8/WP8PopUps.dll</HintPath>
-    </Reference>
-    <Reference Include="WP8PopUps">
-      <HintPath>F:/Joy18_Game_project/Glitch Garden/Assets/Plugins/WP8PopUps.dll</HintPath>
-    </Reference>
     <Reference Include="mscorlib">
       <HintPath>C:/Program Files/Unity/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/mscorlib.dll</HintPath>
     </Reference>

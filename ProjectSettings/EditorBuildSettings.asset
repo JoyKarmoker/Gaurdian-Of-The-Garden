@@ -19,14 +19,17 @@ EditorBuildSettings:
     guid: 37a8dc3b3d6a03f488e7412d34c5fc38
   - enabled: 1
     path: Assets/Scenes/02b level_02.unity
-    guid: bd7010a3ef3954847bae4cfab66b43a9
+    guid: 7e1d25d8c6fd4da4196d7579a0184f99
   - enabled: 1
     path: Assets/Scenes/02c level_03.unity
-    guid: 9da0281ef846d3341a7e0c342f521a49
+    guid: 7a3a34b42523f324e9583eced02b7a1e
   - enabled: 1
     path: Assets/Scenes/03a Winner Scene.unity
     guid: 5e2d440e2ab58e34a803967f5ff733c6
   - enabled: 1
     path: Assets/Scenes/03b Losser Scene.unity
     guid: 48279f35891709541a4435a3def99154
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   m_configObjects: {}

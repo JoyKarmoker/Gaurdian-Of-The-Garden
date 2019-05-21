@@ -60,34 +60,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Extensions\MobileNativePopUps\Example\MNFeaturePreview.cs" />
-    <Compile Include="Assets\Extensions\MobileNativePopUps\Example\MNUseExample.cs" />
-    <Compile Include="Assets\Extensions\MobileNativePopUps\Scripts\Core\MNP.cs" />
-    <Compile Include="Assets\Extensions\MobileNativePopUps\Scripts\Core\MNPopup.cs" />
-    <Compile Include="Assets\Extensions\MobileNativePopUps\Scripts\Core\MobileNativeDialog.cs" />
-    <Compile Include="Assets\Extensions\MobileNativePopUps\Scripts\Core\MobileNativeMessage.cs" />
-    <Compile Include="Assets\Extensions\MobileNativePopUps\Scripts\Core\MobileNativeRateUs.cs" />
-    <Compile Include="Assets\Extensions\MobileNativePopUps\Scripts\Enum\MNDialogResult.cs" />
-    <Compile Include="Assets\Extensions\MobileNativePopUps\Scripts\Platfroms\AndroidImpl\PopUps\Base\MNAndroidNative.cs" />
-    <Compile Include="Assets\Extensions\MobileNativePopUps\Scripts\Platfroms\AndroidImpl\PopUps\Base\MNProxyPool.cs" />
-    <Compile Include="Assets\Extensions\MobileNativePopUps\Scripts\Platfroms\AndroidImpl\PopUps\MNAndroidDialog.cs" />
-    <Compile Include="Assets\Extensions\MobileNativePopUps\Scripts\Platfroms\AndroidImpl\PopUps\MNAndroidMessage.cs" />
-    <Compile Include="Assets\Extensions\MobileNativePopUps\Scripts\Platfroms\AndroidImpl\PopUps\MNAndroidRateUsPopUp.cs" />
-    <Compile Include="Assets\Extensions\MobileNativePopUps\Scripts\Platfroms\IOSImpl\PopUps\base\MNIOSNative.cs" />
-    <Compile Include="Assets\Extensions\MobileNativePopUps\Scripts\Platfroms\IOSImpl\PopUps\MNIOSDialog.cs" />
-    <Compile Include="Assets\Extensions\MobileNativePopUps\Scripts\Platfroms\IOSImpl\PopUps\MNIOSMessage.cs" />
-    <Compile Include="Assets\Extensions\MobileNativePopUps\Scripts\Platfroms\IOSImpl\PopUps\MNIOSRateUsPopUp.cs" />
-    <Compile Include="Assets\Extensions\MobileNativePopUps\Scripts\Platfroms\WP8Impl\PopUps\base\BaseWP8Popup.cs" />
-    <Compile Include="Assets\Extensions\MobileNativePopUps\Scripts\Platfroms\WP8Impl\PopUps\MNWP8Dialog.cs" />
-    <Compile Include="Assets\Extensions\MobileNativePopUps\Scripts\Platfroms\WP8Impl\PopUps\MNWP8Message.cs" />
-    <Compile Include="Assets\Extensions\MobileNativePopUps\Scripts\Platfroms\WP8Impl\PopUps\MNWP8RateUsPopUp.cs" />
-    <Compile Include="Assets\Extensions\StansAssetsCommon\FileStaticAPI.cs" />
-    <Compile Include="Assets\Extensions\StansAssetsCommon\SA_DataConverter.cs" />
-    <Compile Include="Assets\Extensions\StansAssetsCommon\SA_IdFactory.cs" />
-    <Compile Include="Assets\Extensions\StansAssetsCommon\SA_ScreenShotMaker.cs" />
-    <Compile Include="Assets\Extensions\StansAssetsCommon\SA_Singleton.cs" />
-    <Compile Include="Assets\Extensions\StansAssetsCommon\WWWTextureLoader.cs" />
-    <Compile Include="Assets\Prefabs\AndroidExit.cs" />
     <Compile Include="Assets\Prefabs\BtnFx.cs" />
     <Compile Include="Assets\Scripts\FadeIn.cs" />
     <Compile Include="Assets\Scripts\FinalSceneLoader.cs" />
@@ -97,9 +69,26 @@
     <Compile Include="Assets\Scripts\lizard_Spawn.cs" />
     <Compile Include="Assets\Scripts\MusicManager.cs" />
     <Compile Include="Assets\Scripts\OptionsController.cs" />
+    <Compile Include="Assets\Scripts\PauseMenuManager.cs" />
     <Compile Include="Assets\Scripts\PlayerPrefsManager.cs" />
     <Compile Include="Assets\Scripts\SetStartVolume.cs" />
+    <Compile Include="Assets\Scripts\Test.cs" />
     <Compile Include="Assets\Scripts\WinnerScene.cs" />
+    <Reference Include="Unity.TextMeshPro.Editor">
+      <HintPath>F:/Joy18_Game_project/Glitch Garden/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.PackageManagerUI.Editor">
+      <HintPath>F:/Joy18_Game_project/Glitch Garden/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.CollabProxy.Editor">
+      <HintPath>F:/Joy18_Game_project/Glitch Garden/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro">
+      <HintPath>F:/Joy18_Game_project/Glitch Garden/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Analytics.DataPrivacy">
+      <HintPath>F:/Joy18_Game_project/Glitch Garden/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
     </Reference>
@@ -312,12 +301,6 @@
     </Reference>
     <Reference Include="Unity.Analytics.Tracker">
       <HintPath>F:/Joy18_Game_project/Glitch Garden/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
-    </Reference>
-    <Reference Include="WP8PopUps">
-      <HintPath>F:/Joy18_Game_project/Glitch Garden/Assets/Plugins/WP8/WP8PopUps.dll</HintPath>
-    </Reference>
-    <Reference Include="WP8PopUps">
-      <HintPath>F:/Joy18_Game_project/Glitch Garden/Assets/Plugins/WP8PopUps.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
       <HintPath>C:/Program Files/Unity/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>
