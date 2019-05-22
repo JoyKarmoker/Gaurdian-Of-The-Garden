@@ -7,15 +7,30 @@ public class SetStartVolume : MonoBehaviour
     private MusicManager musicManger;
     float volume;
     // Start is called before the first frame update
-    void Start()
+
+    /*private void Awake()
     {
+        DontDestroyOnLoad(gameObject);
+        musicManger = GameObject.FindObjectOfType<MusicManager>();
+        volume = PlayerPrefsManager.GetMasterVolume();
+        musicManger.SetVolume(volume);
+    }*/
+
+    void Awake()
+    {
+        Debug.Log("Loded again main Scene");
+    }
+
+    void Start()
+    { 
+
         musicManger = GameObject.FindObjectOfType<MusicManager>();
 
         if(musicManger)
         {
-            Debug.Log("Found " + musicManger);
-           // volume = PlayerPrefsManager.GetMasterVolume();
-            //musicManger.SetVolume(volume);
+            Debug.Log("Found xyz " + musicManger);
+            volume = PlayerPrefsManager. GetMasterVolume();
+            musicManger.SetVolume(volume);
             
         }
         else

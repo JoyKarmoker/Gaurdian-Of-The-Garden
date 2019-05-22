@@ -41,14 +41,14 @@ public class MusicManager : MonoBehaviour
         if (level == 2)
         {
 
-            Debug.Log("Hello");
+            //Debug.Log("Hello");
             DontDestroyOnLoad(audioSource);
             fuck = true;
         }
 
         else if (level == 1 && fuck == true)
         {
-            Debug.Log("Hi");
+           // Debug.Log("Hi");
             DontDestroyOnLoad(audioSource);
 
         }
@@ -62,6 +62,7 @@ public class MusicManager : MonoBehaviour
             audioSource.clip = thisLevelMuisc;
             audioSource.loop = true;
             audioSource.Play();
+            fuck = false;
         }
         
  
@@ -69,7 +70,7 @@ public class MusicManager : MonoBehaviour
 
     public void SetVolume(float volume)
     {
-        PlayerPrefsManager.SetMasterVolume(volume);
+        audioSource.volume = volume;
     }
 
 }
