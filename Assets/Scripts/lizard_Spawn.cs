@@ -6,8 +6,8 @@ public class lizard_Spawn : MonoBehaviour
 {
     public lizard_move lm_prefab;
     bool spwan = true;
-    float min_time = 1f;
-    float max_time = 5f;
+    [SerializeField]float min_time = 1f;
+    [SerializeField]float max_time = 5f;
   
     IEnumerator Start()
     {
@@ -21,6 +21,7 @@ public class lizard_Spawn : MonoBehaviour
     void attack()
     {
         
-        Instantiate(lm_prefab,transform.position,transform.rotation);
+        lizard_move newLizard = Instantiate(lm_prefab,transform.position,transform.rotation) as lizard_move;
+        newLizard.transform.parent = transform;
     }
 }

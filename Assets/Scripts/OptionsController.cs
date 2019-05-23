@@ -31,7 +31,7 @@ public class OptionsController : MonoBehaviour
         
         PlayerPrefsManager.SetDifficulty(difficultySlider.value);
 
-        SceneManager.LoadScene(1);
+        levelLoader.BackButton();
     }
 
     public void SetDefaults()

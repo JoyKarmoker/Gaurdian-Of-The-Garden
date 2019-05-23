@@ -8,12 +8,12 @@ public class MusicManager : MonoBehaviour
     public AudioClip[] levelMusicChangeArray;
     private AudioSource audioSource;
     bool fuck = false;
-    
- 
+
+
     // Start is called before the first frame update
     private void Awake()
     {
- 
+
         DontDestroyOnLoad(gameObject);
         //Debug.Log("Dont Destroy on load: " + name);
     }
@@ -27,7 +27,7 @@ public class MusicManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     public void ChangeVolume(float volume)
@@ -45,14 +45,14 @@ public class MusicManager : MonoBehaviour
             DontDestroyOnLoad(audioSource);
             fuck = true;
         }
-        else if(level == 3)
+        else if (level == 3)
         {
             DontDestroyOnLoad(audioSource);
             fuck = true;
         }
         else if (level == 1 && fuck == true)
         {
-           // Debug.Log("Hi");
+            // Debug.Log("Hi");
             DontDestroyOnLoad(audioSource);
 
         }
@@ -68,8 +68,8 @@ public class MusicManager : MonoBehaviour
             audioSource.Play();
             fuck = false;
         }
-        
- 
+
+
     }
 
     public void SetVolume(float volume)

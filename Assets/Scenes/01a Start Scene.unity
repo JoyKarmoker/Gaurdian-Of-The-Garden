@@ -1845,6 +1845,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 621b51a68fd6f1f4d9508a12684e577e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fadeInTime: 1.5
   currentcolor: {r: 0, g: 0, b: 0, a: 1}
   fadePanel: {fileID: 1946186347}
 --- !u!1001 &2009713981

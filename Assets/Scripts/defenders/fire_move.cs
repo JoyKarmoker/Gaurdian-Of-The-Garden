@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class fire_move : MonoBehaviour
 {
-     float speed = 4f;
+     [SerializeField]float speed = 4f;
     public float damage = 50;
     // Start is called before the first frame update
     void Start()

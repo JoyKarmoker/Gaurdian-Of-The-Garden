@@ -7,7 +7,7 @@ public class defender_spawner : MonoBehaviour
     [SerializeField] Defender defender;
     private void OnMouseDown()
     {
-        defender_spwaner(GetSquareClicked());
+        PlaceDefender(GetSquareClicked());
     }
     Vector2 GetSquareClicked()
     {
@@ -24,7 +24,7 @@ public class defender_spawner : MonoBehaviour
         float newY = Mathf.RoundToInt(world_position.y);
         return new Vector2(newX, newY+.2f);
     }
-    void defender_spwaner(Vector2 final_position)
+    void defenderSpawner(Vector2 final_position)
     {
 
         Defender new_defender = Instantiate(defender, final_position, Quaternion.identity) as Defender;
@@ -33,5 +33,15 @@ public class defender_spawner : MonoBehaviour
     public void SelectDefender(Defender selected_defender)
     {
         defender = selected_defender;
+    }
+    void PlaceDefender(Vector2 gridpos)
+    {
+        var starDisplay = FindObjectOfType<stardisplay>();
+        int costofdef = defender.GetCost();
+        if(starDisplay.DoWeHaveStars(costofdef))
+        {
+            defenderSpawner(gridpos);
+            starDisplay.remove_star(costofdef);
+        }
     }
 }
