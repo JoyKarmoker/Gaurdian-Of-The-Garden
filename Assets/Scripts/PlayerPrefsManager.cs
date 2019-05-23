@@ -8,6 +8,22 @@ public class PlayerPrefsManager : MonoBehaviour
     const string DIFFICULTY_KEY = "difficulty";
     const string LEVEL_KEY = "Level_unlocked_";
 
+    /*public static void Check()
+    {
+        PlayerPrefs.SetInt(LEVEL_KEY + 2.ToString(), 0);
+        PlayerPrefs.SetInt(LEVEL_KEY + 3.ToString(), 0);
+        //PlayerPrefs.DeleteKey(LEVEL_KEY +2.ToString());
+        if(PlayerPrefs.HasKey(LEVEL_KEY + 2.ToString()))
+        {
+            Debug.Log("lEVEL 2 FOUND ON playerprefs");
+        }
+
+        else
+        {
+            Debug.Log("Not found level 2");
+        }
+    }*/
+
     public static void SetMasterVolume(float volume)
     {
         if(volume >=0f && volume <=1f)
@@ -25,33 +41,41 @@ public class PlayerPrefsManager : MonoBehaviour
         return PlayerPrefs.GetFloat(MASTER_VOLUME_KEY);
     }
 
-    /*public static void UnlockLevel(int level)
+    public static void UnlockLevel(int level)
     {
-        if(level <= Application.levelCount - 1)
-        {
+       // if(level <= Application.levelCount - 1)
+       // {
             PlayerPrefs.SetInt(LEVEL_KEY + level.ToString() , 1);
-        }
-        else
+        //}
+        /*else
         {
             Debug.LogError("Trying to unlock level outside build settings");
-        }
-    }*/
+        }*/
+    }
 
-   /* public static bool IsLevelUnlocked(int level)
+    public static bool IsLevelUnlocked(int level)
     {
         int levelvalue = PlayerPrefs.GetInt(LEVEL_KEY + level.ToString());
         bool IsLevelUnlocked = (levelvalue == 1);
-        if (level <= Application.levelCount - 1)
-        {
+        //if (level <= Application.levelCount - 1)
+        //{
 
-            return IsLevelUnlocked;
+        if (IsLevelUnlocked == true)
+        {
+            return true;
         }
+
         else
+        {
+            return false; 
+        }
+        //}
+        /*else
         {
             Debug.LogError("Trying to unlock level outside build settings");
             return false;
-        }
-    }*/
+        }*/
+    }
 
         public static void  SetDifficulty(float difficulty)
         {

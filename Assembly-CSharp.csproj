@@ -61,10 +61,17 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Prefabs\BtnFx.cs" />
+    <Compile Include="Assets\Scripts\attackers\health.cs" />
+    <Compile Include="Assets\Scripts\defenders\Defender.cs" />
+    <Compile Include="Assets\Scripts\defenders\defender_spawner.cs" />
+    <Compile Include="Assets\Scripts\defenders\Fire.cs" />
+    <Compile Include="Assets\Scripts\defenders\fire_move.cs" />
     <Compile Include="Assets\Scripts\FadeIn.cs" />
     <Compile Include="Assets\Scripts\FinalSceneLoader.cs" />
+    <Compile Include="Assets\Scripts\game UI\game_button_ui.cs" />
     <Compile Include="Assets\Scripts\LevelLoad.cs" />
     <Compile Include="Assets\Scripts\LevelLoaderForOptionScene.cs" />
+    <Compile Include="Assets\Scripts\LevelUnlockedSceneController.cs" />
     <Compile Include="Assets\Scripts\lizard_move.cs" />
     <Compile Include="Assets\Scripts\lizard_Spawn.cs" />
     <Compile Include="Assets\Scripts\MusicManager.cs" />
