@@ -18,7 +18,7 @@ public class SetStartVolume : MonoBehaviour
 
     void Awake()
     {
-        Debug.Log("Loded again main Scene");
+        //Debug.Log("Loded again main Scene");
     }
 
     void Start()
@@ -28,14 +28,14 @@ public class SetStartVolume : MonoBehaviour
 
         if(musicManger)
         {
-            Debug.Log("Found xyz " + musicManger);
+            //Debug.Log("Found xyz " + musicManger);
             volume = PlayerPrefsManager. GetMasterVolume();
             musicManger.SetVolume(volume);
             
         }
         else
         {
-            Debug.LogWarning("Not found the music manager");
+           // Debug.LogWarning("Not found the music manager");
         }
 
     }

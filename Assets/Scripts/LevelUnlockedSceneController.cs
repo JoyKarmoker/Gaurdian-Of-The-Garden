@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class LevelUnlockedSceneController : MonoBehaviour
 {
@@ -32,21 +33,28 @@ public class LevelUnlockedSceneController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            SceneManager.LoadScene(1);
+        }
     }
+
 
     public void Level1Button()
     {
+        SceneManager.LoadScene(4);
         Debug.Log("Level 1 Button Pressed");
     }
 
     public void Level2Button()
     {
+        SceneManager.LoadScene(5);
         Debug.Log("Level 2 Button Pressed");
     }
 
     public void Level3Button()
     {
+        SceneManager.LoadScene(6);
         Debug.Log("Level 3 Button Pressed");
     }
 }

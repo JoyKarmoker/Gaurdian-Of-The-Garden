@@ -45,7 +45,11 @@ public class MusicManager : MonoBehaviour
             DontDestroyOnLoad(audioSource);
             fuck = true;
         }
-
+        else if(level == 3)
+        {
+            DontDestroyOnLoad(audioSource);
+            fuck = true;
+        }
         else if (level == 1 && fuck == true)
         {
            // Debug.Log("Hi");

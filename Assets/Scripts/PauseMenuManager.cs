@@ -7,7 +7,7 @@ public class PauseMenuManager : MonoBehaviour
 {
     public GameObject pauseMenuPanel;
     public static bool gameIsPaused = false;
-    int sceneNumber;
+    //int sceneNumber;
     // Start is called before the first frame update
     void Start()
     {
@@ -27,10 +27,10 @@ public class PauseMenuManager : MonoBehaviour
 
     public void PauseButtonPressed()
     {
-        Debug.Log("hdsf");
         pauseMenuPanel.SetActive(true);
         gameIsPaused = true;
         Pause();
+        Debug.Log("Pause Button pressed");
     }
 
     public void Resume()
@@ -47,7 +47,7 @@ public class PauseMenuManager : MonoBehaviour
 
     public void Restart()
     {
-        sceneNumber = SceneManager.GetActiveScene().buildIndex;
+        //sceneNumber = SceneManager.GetActiveScene().buildIndex;
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
